@@ -1,0 +1,53 @@
+.top_bar{
+    position:fixed;
+    width:100vw;
+    height:80px;
+    background-color: grey;
+    left:0;
+    top:0;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+
+    max-width: 1200px;
+    margin:0 auto;
+    font-size: 30px;
+    padding:15px 0;
+}
+.interactiveButton{
+    float:left;
+   
+}
+.logo{
+    width:256px;
+    height: 40px;
+    position: relative;
+
+
+    background-image: url("images/logo.png");
+    background-size: contain; /* contain so we can have image scaled to div*/
+    background-repeat: no-repeat;
+    
+}
+
+.subMenu{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+
+}
+
+.collapsableText{
+  
+}
+
+.hamburgerButton{
+    background-image: url("images/menu-hamburger--open.gif");
+    width:40px;
+    height: 40px;
+    background-size:contain;
+    display:none;
+    float:right;
+}
