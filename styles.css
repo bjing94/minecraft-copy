@@ -1,10 +1,16 @@
-.top_bar{
+body{
+    overflow-x: hidden;
+}
+.top_bar{ 
     position:fixed;
     width:100vw;
     height:80px;
     background-color: grey;
     left:0;
     top:0;
+    background-image: url("images/bg-wool-dark.png");
+    z-index: 8;
+    
 }
 .container{
     display: flex;
@@ -13,11 +19,19 @@
     max-width: 1200px;
     margin:0 auto;
     font-size: 30px;
+    
     padding:15px 0;
 }
 .interactiveButton{
+    
     float:left;
-   
+    color:white;
+}
+.interactiveButton:hover{
+    color:rgb(15, 241, 15);
+}
+.smallLogo{
+    height: 30px;
 }
 .logo{
     width:256px;
@@ -45,9 +59,198 @@
 
 .hamburgerButton{
     background-image: url("images/menu-hamburger--open.gif");
-    width:40px;
-    height: 40px;
+    width:60px;
+    height: 60px;
     background-size:contain;
     display:none;
-    float:right;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+   
+   
 }
+
+.fullWidthPanel{
+    display:flex;
+    justify-content: center;
+    
+    position: absolute;
+    width:100vw;
+    height:200px;
+    color:white;
+    left:0;
+    top:80px;
+    
+}
+
+.slideLeft{
+    position: absolute;
+    margin-left:100px;
+    margin-top:100px;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    width:auto;
+    max-width: 540px;
+    top:0;
+    left:0;
+}
+.centeredContainer{
+    
+   width:100%;
+   max-width: 1200px;
+   height: 600px;
+
+   position: relative;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/home-hero-1200x600.jpg");
+}
+.minecraftButton{
+    background-color:#34aa2f;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:257px;
+    height:62px;
+    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition:background-color 0.2s ease-in-out;
+    transition-delay: 0s;
+}
+.minecraftButton:hover{
+    background-color:#4c504b;
+}
+
+#secondPanel{
+    height:811px; 
+    background-image: url('images/bg-wool-dark.png');
+    top:600px;
+}
+#thirdPanel{
+    height:612px; 
+    background-image: url('images/bg-wool-dark.png');
+    top:1411px;
+    color:white;
+}
+#transitionBottom{
+    background-image:url('images/trans-top-darkwool.png');
+    height:100px;
+    top:2023px;
+    z-index: 5;
+}
+#fourthPanel{
+    height:1716px; 
+    background-image: url('images/bg-wool-light.png');
+    top:2023px;
+    color:white;
+}
+.scrollContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    top:50px;
+    max-width: 1100px;
+    height:700px;
+    position: relative;
+    background-color:white;
+    color:black;
+    text-align: center;
+
+}
+.scrollContainer-middle
+{
+    max-width: 720px;
+}
+.scrollContainer-small{
+    max-width: 540px;
+}
+.scroller{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+    position: relative;
+    background-color:rgb(255, 255, 255);
+
+    color:black;
+}
+.scrollElement{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height:320px;
+    width:220px;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    background-size:cover;
+background-image:url("images/games_subnav_dungeona-300x465.jpg");
+text-align: center;
+}
+.scrollElement:hover{
+    transform:scale(1.2);
+    z-index: 6;
+}
+
+.scrollElement-news
+{
+    height: 161px;
+    width:281px;
+    border-top: 2px;
+    border-color: white;
+    border-style: solid;
+}
+a{
+    text-decoration: none;
+}
+.newsContainer{
+    max-width: 1500px;
+    top:100px;
+    position: absolute;
+    z-index: 5;
+}
+.col{
+
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width:90%;
+    max-width: 1000px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-item{
+    height:285px;
+    flex-basis: 50%;
+    width:475px;
+    position:relative;
+    padding:10px;
+    box-sizing: border-box;
+    color:black;
+    
+}
+@media(max-width:1333px)
+{
+    .grid-item{
+        flex-basis: 50%;
+    }
+}
+@media(max-width:1058px)
+{
+    .grid-item{
+        flex-basis: 100%;
+    }
+}
+
+
